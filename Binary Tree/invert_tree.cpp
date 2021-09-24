@@ -1,3 +1,6 @@
+/*
+Program to mirror or invert a binary tree
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -21,6 +24,10 @@ void inorder(Node* node){
   inorder(node->right);
 }
 
+/*
+To invert a binary tree, we will do BFS of the tree
+and swap the children of nodes at each level
+*/
 void inverttree(Node* node){
   if(node == NULL)
     return;
